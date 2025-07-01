@@ -1,0 +1,10 @@
+.tile:hover{
+    background-color: rgb(208, 205, 205);
+    font-size: 40px !important;
+}
+.title:active{
+    
+}
+.tile{
+    font-weight: 600;
+}
