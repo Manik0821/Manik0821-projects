@@ -1,0 +1,22 @@
+.details-table {
+    .weather-details-table {
+        tbody {
+            tr {
+                display: flex;
+                justify-content: space-between;
+                width: 120%;
+                padding: 0 5px;
+
+                td {
+                    width: fit-content;
+
+                }
+            }
+        }
+
+        thead {
+            padding: 0 5px;
+        }
+
+    }
+}

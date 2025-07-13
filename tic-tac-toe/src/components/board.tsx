@@ -4,7 +4,7 @@ import Players from "./players";
 import { useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../state/store";
 import { useDispatch } from "react-redux";
-import { playerWins,Draw } from "../state/counter/players";
+import { playerWins } from "../state/counter/players";
 import { Winner } from "../state/counter/winCheck";
 
 type place = {
@@ -24,13 +24,13 @@ const Board = () => {
     const players = useSelector((state: RootState) => state.players);
     const winStatus = useSelector((state: RootState) => state.winCheck);
     const Dispatch = useDispatch<AppDispatch>();
-    
+
     const WinCount = () => {
         console.log("winStatus", winStatus);
         return (
             <div className="player-section" style={{ display: "flex", justifyContent: "center", padding: "40px 0" }}>
-                {players.map((pl,index) => (
-                    <Players name={pl.name} winCount={pl.winCount} Val={pl.Val} curr={currPlayer===index?true:false} status={winStatus[index].status} />
+                {players.map((pl, index) => (
+                    <Players name={pl.name} winCount={pl.winCount} Val={pl.Val} curr={currPlayer === index ? true : false} status={winStatus[index].status} />
                 ))}
             </div>
         );
@@ -73,18 +73,18 @@ const Board = () => {
             console.log("winner is :", players[currPlayer].name);
             Dispatch(playerWins(currPlayer));
             Dispatch(Winner(currPlayer));
-            const timer = setTimeout(() => {
+            setTimeout(() => {
                 Dispatch(Winner(2));
                 updateCounter(0);
                 resetBoard();
-              }, 3000); 
+            }, 3000);
             return;
         } else if (checkWin() === "draw") {
             endGame(game => true);
             changePlayer(cp => (cp + 1) % 2);
             Dispatch(Winner(3));
             updateCounter(0);
-            const timer = setTimeout(() => {
+            setTimeout(() => {
                 Dispatch(Winner(2));
                 resetBoard();
             }, 3000);

@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import winCountReducer from './counter/winCheck';
 import PlayerReducer from './counter/players';
-import winCheck from "./counter/winCheck";
 
 export const store = configureStore({
     reducer: {

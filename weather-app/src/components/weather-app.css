@@ -1,0 +1,35 @@
+.weather-container {
+  container-type: inline-size;
+}
+
+@container (min-width: 850px) {
+  .weather-app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns on large screens */
+    gap: 15px;
+  }
+}
+
+@container (max-width: 600px) {
+  .weather-app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on medium screens */
+    gap: 15px;
+  }
+}
+
+@container (max-width: 400px) {
+  .weather-app {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column on small screens */
+    gap: 10px;
+  }
+}
+
+.forecast-item:hover {
+  background-color: aliceblue;
+  color: blue;
+}
