@@ -2,7 +2,7 @@
   container-type: inline-size;
 }
 
-@container (min-width: 850px) {
+@container (min-width: 800px) and (max-width: 1500px) {
   .weather-app {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,16 +11,16 @@
   }
 }
 
-@container (max-width: 600px) {
+@container (min-width: 600px) and (max-width: 801px) {
   .weather-app {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* 2 columns on medium screens */
-    gap: 15px;
+    gap: 10px;
   }
 }
 
-@container (max-width: 400px) {
+@container (max-width: 599px) {
   .weather-app {
     display: grid;
     grid-template-columns: 1fr;

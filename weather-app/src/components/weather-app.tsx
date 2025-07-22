@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import Card from "./card";
 import './weather-app.css';
 import DetailsPanel from "./detailsPanel";
-import { weatherList } from "../state/slice/weatherData";
+import { currentList } from "../state/slice/weatherData";
 import { useDispatch, useSelector } from "react-redux";
 import { Open } from "../state/slice/changPanel";
 import { AppDispatch } from "../state/store";
+import {weatherList,AddToList,GetData} from "../state/slice/weatherData"; // Import the weatherList from the slice
 
 const WeatherApp = () => {
     const isPanelOpen = useSelector((state: any) => state.panel.isPanelOpen); // Access the panel state
@@ -15,7 +16,7 @@ const WeatherApp = () => {
     const [cities, updateCity] = useState<string[]>([]);
     const addCity = (city: string) => {
         if (!city || city.trim() === "") return; // Do not add empty or whitespace-only cities
-        let backdate = "2025-07-12";
+        let backdate = "2025-07-13";
         Dispatch(Open(city + backdate)); // Dispatch the Open action with the city as id
         city = city + backdate;
         console.log("Adding city:", city);
@@ -32,11 +33,11 @@ const WeatherApp = () => {
     };
     useEffect(() => {
 
-        updateCity(weatherList); // Initialize with the weatherList from the state slice
+        updateCity(currentList); // Initialize with the weatherList from the state slice
     }
-        , [weatherList]);
+        , [currentList]);
     return (
-        <div className=" weather-wrapper flex items-center flex-row">
+        <div className=" weather-wrapper flex items-center flex-row" style={{justifyContent:"flex-start"}}>
             <div className="weather-container flex flex-col justify-flex-start items-center border-radius-4" style={{ contain: "content", minWidth: isPanelOpen ? "65%" : "100%" }}>
                 <h1 style={{ fontSize: "2rem", fontWeight: "bolder", color: "rgb(47 136 236)" }}>Weather App</h1>
                 <div className="filters flex">
