@@ -16,7 +16,7 @@ const WeatherApp = () => {
     const [cities, updateCity] = useState<string[]>([]);
     const addCity = (city: string) => {
         if (!city || city.trim() === "") return; // Do not add empty or whitespace-only cities
-        let backdate = "2025-07-13";
+        let backdate = "2025-07-20";
         Dispatch(Open(city + backdate)); // Dispatch the Open action with the city as id
         city = city + backdate;
         console.log("Adding city:", city);

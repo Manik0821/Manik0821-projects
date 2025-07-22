@@ -6,7 +6,8 @@ import { WeatherData, ExtraTable } from "../types/weather";
 import './card.css'; // Import the CSS file for styling
 import { Open } from '../state/slice/changPanel';
 import DetailsTable from './DetailsTable';
-import {GetData } from "../state/slice/weatherData";
+import { GetData } from "../state/slice/weatherData";
+import { data, Link } from "react-router-dom";
 
 const Card = ({ details = "", panel = false }) => {
   useEffect(() => {
@@ -71,6 +72,8 @@ const Card = ({ details = "", panel = false }) => {
     {panel && weatherDetails && (<div className="table-wrapper">
       {weatherDetails.extraTable && <DetailsTable extraTable={weatherDetails.extraTable as ExtraTable} />}
     </div>)}
+    {weatherDetails && <Link to="/weather" state={{ data: weatherDetails }}>Click for details</Link>}
+
   </>
   )
 }

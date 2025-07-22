@@ -28,6 +28,11 @@ type Forecast = {
     day: {
         avgtemp: number;
     }
+    hours: hourData[];
+}
+type hourData = {
+    time: string;
+    temperature: number;
 }
 
-export type { WeatherData, ExtraTable, Forecast };
+export type { WeatherData, ExtraTable, Forecast,hourData };
