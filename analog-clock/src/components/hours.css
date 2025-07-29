@@ -1,0 +1,17 @@
+.set{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.center {
+    margin: 0 auto;
+}
+.left {
+    transform: translateX(-50%) scale(0.8,1);
+}
+.right {
+    transform: translateX(50%);
+}
