@@ -1,0 +1,77 @@
+:root {
+  --primary-background: rgb(77, 4, 233);
+  --secondary-background: blue;
+
+  .App {
+    height: 100vh;
+    contain: content;
+  }
+
+  .main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .section-2{
+      display: flex;
+      max-height: 100%;
+      height: 100%;
+      overflow: auto;
+    }
+    .section-3{
+      min-height: 30%;
+    }
+  }
+
+  @media screen and (min-width: 999px) {
+    h1 {
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+  }
+
+  @media screen and (max-width: 999px) {
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+  }
+
+}

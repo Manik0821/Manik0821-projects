@@ -1,0 +1,58 @@
+:root {
+    --sidebar-color: #007bff;
+    --shadow-color: rgba(11, 6, 6, 0.494);
+
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 8%;
+    width: 25rem;
+    height: 93%;
+    background-color: White;
+    border: 1px solid grey;
+    z-index: 10;
+    transition: all .5s ease-in-out;
+    contain: content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .section {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        contain: content;
+        padding-top: 0.5rem;
+
+        hr{
+            border: 1px solid var(--sidebar-color);
+            width: 90%;
+            align-self: center;
+            margin: 0 1rem ;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: whitesmoke;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            background: var(--sidebar-color);
+            width: 100%;
+        }
+
+    }
+
+    .sidebar-title {
+        color: var(--secondary-background)
+    }
+
+    .sidebar-items {
+        min-width: 250px;
+        
+    }
+}

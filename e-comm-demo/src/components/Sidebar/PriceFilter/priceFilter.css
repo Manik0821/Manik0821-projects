@@ -1,0 +1,47 @@
+.price-slider{
+    width: 90%;
+    transition: all 3s ease-in-out;
+
+    .input-slider{
+        width: 100%;
+    }
+}
+.price-inputs{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    .inp-cont{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .price-label{
+            transform: translateY(-75%);
+            background: white;
+            padding: 0 0.2rem;
+            color: var(--sidebar-color);
+            font-weight: 800;
+        }
+    }
+
+    input {
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        border: none;
+        font-size: 1rem;
+        outline: none;
+        box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.6);
+        transition: box-shadow 0.3s ease;
+        text-align: center;
+
+        &:focus {
+            box-shadow: 0 0 0.4rem 0.1rem var(--sidebar-color);
+        }
+    }
+}

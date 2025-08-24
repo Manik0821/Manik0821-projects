@@ -1,0 +1,80 @@
+.inventory {
+    justify-content: center;
+    margin: 2rem 1rem;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+
+    .content-container{
+        display: flex;
+        margin: 0 10%;
+        /* padding: 0 0.5rem; */
+        width: 80%;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .filter-container, sort-container{
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            background: lightgrey;
+            border-radius: 0.5rem;
+
+            .filter-btn, sort-btn{
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                font-weight: 700;
+            }
+        }
+        .sort-container{
+            padding: 0rem 0.4rem;
+            font-size: 1.2rem;
+            background: lightgray;
+            border-radius: 0.5rem;
+            height: 50%;
+
+            .sort-btn{
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .inventory-header {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        color: whitesmoke;
+        margin-bottom: 2rem;
+
+        .inventory-search{
+            width: -webkit-fill-available;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+            display: flex;
+
+            .filter-input{
+                border: 1px solid black;
+                padding: 0 0.5rem;
+                border-radius: 0.5rem ;
+            }
+        }
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

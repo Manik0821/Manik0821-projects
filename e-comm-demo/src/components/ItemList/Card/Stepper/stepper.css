@@ -1,0 +1,30 @@
+.qty-stepper{
+    display: flex;
+    gap: 0.3rem;
+    background-color: aliceblue;
+    cursor: pointer;
+
+    button:disabled{
+        background-color: lightgray;
+        opacity: 0.5;
+    }
+
+    .qty-sign{
+        padding: 0.2rem;
+        background-color: lightgray;
+        font-weight: 700;
+        
+        &:active{
+            transform: scale(0.8);
+            transition: 0.1s ease-out;
+        }
+    }
+    .qty-value{
+        padding: 0 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight:600;
+    }
+
+}

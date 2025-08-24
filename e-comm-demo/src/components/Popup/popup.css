@@ -1,0 +1,39 @@
+.popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* dark background overlay */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+    backdrop-filter: blur(5px);
+  }
+  
+  .popup-content {
+    transform: scale(0.9);
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin-top: -4rem;
+    box-shadow: 0rem 0rem 2rem 1rem rgba(96, 96, 96, 0.8)
+  }
+  
+  .close {
+    position: absolute;
+    top: .5rem; right: .5rem;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid black;
+    line-height: 1rem;
+    cursor: pointer;
+  }

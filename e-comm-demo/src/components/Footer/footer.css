@@ -1,0 +1,47 @@
+.footer{
+    height: 100%;
+    /* position: absolute; */
+    left: 0;
+    width: 100%;
+    background: rgb(77, 4, 233);
+    padding: 1rem 2.5rem ;
+
+    .footer-content{
+        color: whitesmoke;
+        p{
+            font-size: 12px;
+            padding-bottom: 0.4rem;
+        }
+        .copyright{
+            font-size: 14px;
+            padding-top: 0.5rem;
+        }
+        .payment-methods{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .social-media{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            color: whitesmoke;
+            font-size: 1.5rem;
+        }
+    }
+
+    .section{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        color: whitesmoke;
+        padding: 0.5rem 2rem;
+    }
+}
