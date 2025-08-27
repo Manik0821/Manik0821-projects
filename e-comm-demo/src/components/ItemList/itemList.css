@@ -12,13 +12,13 @@
         justify-content: space-between;
         align-items: flex-end;
 
-        .filter-container, sort-container{
+        .filter-container {
             padding: 0.5rem 1rem;
             font-size: 1.2rem;
             background: lightgrey;
             border-radius: 0.5rem;
 
-            .filter-btn, sort-btn{
+            .filter-btn {
                 display: flex;
                 align-items: center;
                 gap: 0.2rem;
@@ -26,18 +26,12 @@
             }
         }
         .sort-container{
-            padding: 0rem 0.4rem;
+            padding: 0.5rem;
             font-size: 1.2rem;
-            background: lightgray;
+            background: lightgrey;
             border-radius: 0.5rem;
-            height: 50%;
-
-            .sort-btn{
-                display: flex;
-                align-items: center;
-                gap: 0.2rem;
-                font-weight: 700;
-            }
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -64,7 +58,7 @@
 
             .filter-input{
                 border: 1px solid black;
-                padding: 0 0.5rem;
+                padding: 0 1rem;
                 border-radius: 0.5rem ;
             }
         }

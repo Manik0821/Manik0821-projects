@@ -1,0 +1,25 @@
+.dropdown-select {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 4rem;
+  
+  appearance: none;        /* removes default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  select {
+    width: 5rem;
+    font-weight: 700;
+  }
+
+  &:focus-visible{
+    outline: none;
+  }
+  option {
+    margin-top: 1rem;
+  }
+  
+}

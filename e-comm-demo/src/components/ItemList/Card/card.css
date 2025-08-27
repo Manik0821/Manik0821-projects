@@ -51,5 +51,15 @@
         padding: 0.5rem;
         font-weight: 700;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .card{
+        transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 500px) {
+    .card{
+        transform: scale(0.95);
+    }
 }
