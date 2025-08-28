@@ -16,7 +16,7 @@ const ItemsList = () => {
     dispatch(openFilter())
 
     let selectedItems = useSelector((state: RootState) => state.cart.fetchedItems);
-    const [selectedOption, setSelectedOption] = useState("Sort by");
+    const [selectedOption, setSelectedOption] = useState("");
     const enableFilter = useSelector((state: RootState) => state.Toggle.isFilterPopupOpen);
 
     selectedItems = [...selectedItems].sort((a, b) => {
@@ -35,18 +35,16 @@ const ItemsList = () => {
 
     return (
         <div className="inventory">
+
+<div style={{display:enableFilter?`block`:`none`}} ><Popup child={<SidebarFilter />} /></div>
             <div className="content-container">
                 <div className="filter-container" >
 
-                  <div style={{display:enableFilter?`block`:`none`}} ><Popup child={<SidebarFilter />} /></div>
-                    <button className="filter-btn" onClick={()=>dispatch(togglePopup())} >
+                    <button className="fs-btn" onClick={()=>dispatch(togglePopup())} >
                         <Filter size={18} strokeWidth={3} /> Filter
                     </button>
                 </div>
                 <div className="sort-container">
-                    {/* <button className="sort-btn">
-                        Sort by <ChevronDown size={22} strokeWidth={3} />
-                    </button> */}
                     <Dropdown 
                         options={["Default","Price - Low to High", "Price - High to Low", "Newest First", "Oldest First"]} 
                         selectedOption={selectedOption} 

@@ -74,7 +74,7 @@ export const SidebarFilter = () => {
                     ))}
                 </div>
             </div>
-            <hr />
+            <hr style={{width:"90%",alignSelf:"center",margin:"1rem",borderTop:"1px ridge var(--sidebar-color)"}}/>
             <div className="filter-2">
                 <PriceFilter ref={priceFilterRef} />
             </div>

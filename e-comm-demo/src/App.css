@@ -74,4 +74,15 @@
 
   }
 
+  @media screen and (max-width: 500px) {
+    .main {
+
+      .section-2{
+        overflow: visible;
+        max-height: none;
+        height: auto;
+      }
+    }
+  }
+
 }
