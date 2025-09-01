@@ -3,6 +3,7 @@
     margin: 2rem 1rem;
     height: -webkit-fill-available;
     width: -webkit-fill-available;
+    min-height: 62vh;
 
     .content-container{
         display: flex;
@@ -26,6 +27,7 @@
             }
         }
         .sort-container{
+            cursor: pointer;
             padding: 0.5rem;
             font-size: 1.2rem;
             background: lightgrey;

@@ -5,7 +5,7 @@ export type InventoryItem = {
     quantity: number;
     icon: string;
     price: number;
-    Rating?: number; // Optional property for item rating
+    rating?: number; // Optional property for item rating
     tags?: string[]; // Optional property for item tags
 };
 
@@ -21,7 +21,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://www.shutterstock.com/shutterstock/photos/2433673599/display_1500/stock-vector--radio-wireless-marvel-amplifying-voices-music-news-globally-instant-communication-cultural-2433673599.jpg",
         price: 50,
-        Rating: 4.5,
+        rating: 4.5,
         tags: ["electronics", "music", "communication"]
     },
     "2": {
@@ -31,7 +31,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/9/99/LEI0440_Leica_IIIf_chrom_-_Sn._580566_1951-52-M39_Blitzsynchron_front_view-6531_hf-.jpg",
         price: 150,
-        Rating: 4.8,
+        rating: 4.8,
         tags: ["photography", "electronics", "high-resolution"]
     },
     "3": {
@@ -41,7 +41,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/5/53/Intel_Smartphone_Reference_Design.jpg",
         price: 600,
-        Rating: 4.2,
+        rating: 4.2,
         tags: ["mobile", "communication", "smartphone","electronics","bluetooth"]
     },
     "4": {
@@ -51,7 +51,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Apple_MacBook_Air_13.3.jpg",
         price: 850,
-        Rating: 4.7,
+        rating: 4.7,
         tags: ["electronics", "computer", "portable", "work", "entertainment"]
     },
     "5": {
@@ -61,7 +61,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Apple_Watch_Series_6.jpg",
         price: 125,
-        Rating: 4.3,
+        rating: 4.3,
         tags: ["wearable", "fitness", "electronics", "bluetooth","watch","smart"]
     },
     "6": {
@@ -71,7 +71,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/7/7b/JBL_Bluetooth_Speaker.jpg",
         price: 85,
-        Rating: 4.6,
+        rating: 4.6,
         tags: ["electronics", "music", "wireless", "bluetooth", "speaker"]
     },
     "7": {
@@ -81,7 +81,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Samsung_Smart_TV.jpg",
         price: 899,
-        Rating: 4.9,
+        rating: 4.9,
         tags: ["electronics", "television", "smart", "internet","bluetooth"]
     },
     "8": {
@@ -91,7 +91,7 @@ export const inventoryList:Inventory = {
         quantity: 0,
         icon: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Xbox_One_Console.jpg",
         price: 249,
-        Rating: 4.4,
+        rating: 4.4,
         tags: ["gaming", "electronics", "console", "game", "entertainment"]
     }
 };

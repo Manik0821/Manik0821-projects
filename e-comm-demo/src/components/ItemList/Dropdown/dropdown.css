@@ -5,6 +5,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   width: 4rem;
+  cursor: pointer;
   
   appearance: none;        /* removes default arrow */
   -webkit-appearance: none;

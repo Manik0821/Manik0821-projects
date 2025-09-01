@@ -11,6 +11,7 @@
     background: var(--primary-background);
     font-weight: 700;
     color: whitesmoke;
+    z-index: 20;
 
     .header-menu{
         cursor: pointer;

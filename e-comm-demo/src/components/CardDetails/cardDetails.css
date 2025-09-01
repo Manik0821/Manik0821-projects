@@ -1,12 +1,13 @@
 .card-details{
     height: -webkit-fill-available;
     width: -webkit-fill-available;
+    min-height: 70vh;
 
     .details-body{
         display: flex;
         flex-direction: column;
         width: 90%;
-        margin: 1rem;
+        /* margin: 1rem; */
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         contain: content;
@@ -21,8 +22,24 @@
         }
         .details-main{
             display: flex;
-            background: aliceblue;
-            padding: 0.5rem;
+            /* background: aliceblue; */
+            /* padding: 0.5rem; */
+
+            .partition{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                .details-section{
+                    
+                    .detail-price{
+                        display: flex;
+                        gap: 0.5rem;
+                        align-items: baseline;
+                    }
+                }
+
+            }
 
             .details-desc{
                 display: flex;
@@ -64,6 +81,19 @@
                 }
             }
 
+        }
+    }
+}
+.partition {
+    margin: 0 1rem;
+    .details-section{
+        .offers-list{
+            .offer-item{
+                padding: 0.2rem 0;
+            }
+        }
+        .offer-icon{
+            padding-right:0.2rem;
         }
     }
 }
