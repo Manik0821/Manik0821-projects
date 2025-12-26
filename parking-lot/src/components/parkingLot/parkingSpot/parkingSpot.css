@@ -1,0 +1,16 @@
+.ParkingSpot-container{
+    font-size: 34px;
+    border: 1px solid black;
+    padding: 1rem;
+    min-width: 50%;
+    .parkingSpot
+    {   
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+
+
+    .parked{
+        
+    }
+}

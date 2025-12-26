@@ -1,0 +1,10 @@
+.parkingLot-container{
+    display: none;
+    .parkingLot{
+
+        .Lot{
+            gap: 1;
+        }
+
+    }
+}
