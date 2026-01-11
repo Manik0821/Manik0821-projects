@@ -1,0 +1,53 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* dvh (Dynamic Viewport Height) handles mobile URL bars correctly in 2026 */
+    height: 100dvh; 
+    background-color: #eee;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+
+    /* Start off-screen */
+    transform: translateX(-100%);
+    
+    /* Hardware acceleration for smooth 120Hz mobile screens */
+    /* will-change: transform; */
+    transition: transform 0.6s ease-in-out;
+}
+
+/* When isOpen is true, slide in */
+.modal-container.is-open {
+    transform: translateX(0);
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #888;
+    font-size: 1.2rem;
+
+    .modal-title {
+        color: Black;
+        text-align: center;
+        width: -webkit-fill-available;
+    }
+    .close-button {
+        position: absolute;
+    }
+
+
+}
+
+.modal-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    /* Smooth scrolling for iOS 2026 */
+    -webkit-overflow-scrolling: touch; 
+}

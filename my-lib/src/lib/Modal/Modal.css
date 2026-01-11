@@ -1,0 +1,46 @@
+.lib-modal {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    width: 90%;
+    max-width: 500px;
+
+    .modal-header {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    
+        h2 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        .close-btn {
+            position: absolute;
+            font-weight: 700;
+            color: red;
+            right: 1rem;
+            top: 1rem;
+            outline: 0.1rem solid red;
+            padding: 0.2rem 0.7rem;
+        }
+        .close-btn:focus-within , .close-btn:hover{
+            outline: 0.1rem solid white;
+            box-shadow: 0rem 0rem 0.6rem white ;
+            background: red;
+            color: white;
+        }
+      }
+      
+      .modal-content {
+        padding: 1rem;
+      }
+  }
+  
+  .lib-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px); /* Modern 2025 look */
+  }
+  
+  
+  
