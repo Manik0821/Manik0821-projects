@@ -2,8 +2,9 @@ import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import Dashboard from './components/dashboard/dashboard';
 import './App.css';
 import { Header } from './components/header/header';
-import { ModalPage } from './components/modalPage/ModalPage';
-import { FullScreenModalPage } from './components/fullScreenModalPage/fullScreenModalPage';
+import { ModalPage } from './components/dashboard/pages/modalPage/ModalPage';
+import { FullScreenModalPage } from './components/dashboard/pages/fullScreenModalPage/FullScreenModalPage';
+import { TabsComponent } from './components/dashboard/pages/TabsComponent/TabsComponent';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,11 +23,15 @@ function App() {
     },
     {
       path:"/Modal",
-      element: <ModalPage />
+      element: <ModalPage title={''} subtitle={''} />
     },
     {
       path:"/FullScreenPanel",
       element: <FullScreenModalPage />
+    },
+    {
+      path:"/TabsComponent",
+      element: <TabsComponent />
     }
   ]);
 

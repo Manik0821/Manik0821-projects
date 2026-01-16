@@ -33,11 +33,22 @@ h1 {
   font-size: 28px;
   font-weight: 700;
 }
-
 .page-container {
   background: #ddd;
   flex-grow: 1;
   overflow-y: auto;
+  overflow-x: hidden;
+  
+  /* Standard property for modern browsers (Chrome, Firefox, Edge) */
+  scrollbar-width: none; 
+  
+  /* Prevent layout shift (Alternative to gutter: 0) */
+  scrollbar-gutter: auto; 
+}
+
+/* Vendor-specific for older WebKit browsers (Safari/Chrome) */
+.page-container::-webkit-scrollbar {
+  display: none;
 }
 
 .header-container {

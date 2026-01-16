@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button';
 import './Layout.css'
 
 type LayoutProps = {
@@ -11,7 +12,8 @@ export const Layout : React.FC<LayoutProps> = ({title,subtitle,children}) => {
         <div className="page-layout">
             <div className="page-title">
                 <div className="page-heading">{title}</div>
-                <div className="page-subheading">{subtitle}</div>
+                {/* <div className="page-subheading">{subtitle}</div> */}
+                <Button type="tertiary" value={subtitle} click={false} disabled={false} ></Button>
 
             </div>
             <div className="page-content">

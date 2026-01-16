@@ -17,7 +17,7 @@ const Dashboard = () => {
     const cardContent: CardContent[] = [
         { title: "Modal", content: "Modal Popup Component", path: "/Modal" },
         { title: "Panel", content: "Sliding Panel Component", path: "/FullScreenPanel" },
-        { title: "Card", content: "Content", path: "/" },
+        { title: "Tabs", content: "Tabs Component", path: "/TabsComponent" },
         { title: "Card", content: "Content", path: "/dashboard" }
 
     ]

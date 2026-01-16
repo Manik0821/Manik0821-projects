@@ -8,14 +8,15 @@
     .card{
         min-height: 10rem;
         /* width: 11rem; */
+        background-color: aliceblue;
 
         .card-header{
             font-size: 16px;
             font-weight: 600;
             padding: 5px 0;
             border-bottom: 1px ridge grey;
-            background-color: white;
-            color: black;
+            background-color: rgb(29, 59, 255);
+            color: white;
         }
         .card-body {
             color: blue;

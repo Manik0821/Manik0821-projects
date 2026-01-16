@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Modal } from "../../lib";
+import { Modal } from "../../../../lib";
 import { Link } from "react-router-dom";
-import { Layout } from "../../lib/layout/Layout";
+import { Layout } from "../../../../lib/layout/Layout";
 import './ModalPage.css'
 
 type ModalPageProps = {

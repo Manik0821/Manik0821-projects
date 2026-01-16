@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FullScreenModal } from "../../lib/FullScreenModal/fullScreenModal";
+import { FullScreenModal } from "../../../../lib/FullScreenModal/fullScreenModal";
 import './FullScreenModalPage.css'
-import { Layout } from "../../lib/layout/Layout";
+import { Layout } from "../../../../lib/layout/Layout";
 
 export const FullScreenModalPage = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
