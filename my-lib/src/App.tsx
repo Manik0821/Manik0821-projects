@@ -5,6 +5,7 @@ import { Header } from './components/header/header';
 import { ModalPage } from './components/dashboard/pages/modalPage/ModalPage';
 import { FullScreenModalPage } from './components/dashboard/pages/fullScreenModalPage/FullScreenModalPage';
 import { TabsComponent } from './components/dashboard/pages/TabsComponent/TabsComponent';
+import { Pagination } from './components/dashboard/pages/Paginate/Pagination';
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +33,10 @@ function App() {
     {
       path:"/TabsComponent",
       element: <TabsComponent />
+    },
+    {
+      path:"/Pagination",
+      element: <Pagination />
     }
   ]);
 

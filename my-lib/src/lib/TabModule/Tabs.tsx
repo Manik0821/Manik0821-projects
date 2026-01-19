@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Tabs.css';
+import { Link } from "react-router-dom";
 
 export const TabsModule = () => {
     // 1. State to track the active tab index
@@ -40,6 +41,7 @@ export const TabsModule = () => {
             >
                 {tabsData[activeTab].content}
             </div>
+            <Link to="/" style={{ marginLeft: '10px' }}>Back Home</Link>
         </div>
     );
 };

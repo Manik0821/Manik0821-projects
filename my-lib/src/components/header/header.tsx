@@ -42,7 +42,7 @@ export const Header = () => {
                 </div>
                 <div className="header-content">
                     <img className="header-logo" src={logo} alt="React logo" />
-                    <div className="header-title">Header</div>
+                    <div className="header-title">Library</div>
                 </div>
             </div>
         </div>

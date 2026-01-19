@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #007bff;
+    --bg-light: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-main: #333;
+    --transition-speed: 0.3s;
+}
+
+/* Page Navigation Main Container */
+.page-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    contain: content;
+
+    /* Page Content Body (Matches .tab-body) */
+    .page-nav-content {
+
+        min-height: 200px;
+        line-height: 1.6;
+        color: var(--text-main);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        animation: fadeIn 0.4s ease;
+        margin-bottom: 20px;
+
+        .content-heading {
+            font-size: 24px;
+            font-weight: 600;
+            background: var(--primary-color);
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+
+        .content-main {
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+
+        }
+    }
+
+    /* Pagination Controls Container (Matches .tab-list) */
+    .page-nav-index {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        background: var(--bg-light);
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+    }
+
+    /* Pagination Buttons (Matches .tab-btn) */
+    .nav-btn {
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        background: #fff;
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #666;
+        transition: all var(--transition-speed) ease;
+        border-radius: 4px;
+        border: 0.1px ridge #aaa;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+        background: rgba(0, 123, 255, 0.08);
+        color: var(--primary-color);
+    }
+
+    /* Active Page State */
+    .nav-btn.active {
+        color: var(--primary-color);
+        background: #fff;
+        border: 1px solid var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+    }
+
+    /* Disabled State (Prev/Next) */
+    .nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        filter: grayscale(1);
+    }
+
+    /* Focus State for Accessibility */
+    .nav-btn:focus-visible {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+
+    /* Animation Reference */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(5px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 480px) {
+        .page-nav-index {
+            gap: 4px;
+            padding: 8px;
+        }
+
+        .nav-btn {
+            padding: 6px 10px;
+            font-size: 0.85rem;
+        }
+    }
+
+    .nav-btn-outer {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 2px 6px;
+    }
+}
