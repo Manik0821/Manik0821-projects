@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './PageNav.css'
+import { Link } from "react-router-dom";
 
 type NavItem = {
     title: string;
@@ -80,6 +81,7 @@ export const PageNav = () => {
                     &nbsp;&raquo;&nbsp;
                 </button>
             </div>
+            <Link to="/dashboard" style={{ marginLeft: '10px' }}>Go to Dashboard</Link>
         </div>
     );
 };
