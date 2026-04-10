@@ -6,6 +6,7 @@ import { ModalPage } from './components/dashboard/pages/modalPage/ModalPage';
 import { FullScreenModalPage } from './components/dashboard/pages/fullScreenModalPage/FullScreenModalPage';
 import { TabsComponent } from './components/dashboard/pages/TabsComponent/TabsComponent';
 import { Pagination } from './components/dashboard/pages/Paginate/Pagination';
+import Poll from './components/poll/poll';
 
 function App() {
   const router = createBrowserRouter([
@@ -37,6 +38,10 @@ function App() {
     {
       path:"/Pagination",
       element: <Pagination />
+    },
+    {
+      path:"/poll",
+      element: <Poll />
     }
   ]);
 

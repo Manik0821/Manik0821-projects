@@ -18,7 +18,8 @@ const Dashboard = () => {
         { title: "Modal", content: "Modal Popup Component", path: "/Modal" },
         { title: "Panel", content: "Sliding Panel Component", path: "/FullScreenPanel" },
         { title: "Tabs", content: "Tabs Navigation Component", path: "/TabsComponent" },
-        { title: "Paginate", content: "Page Navigation Component", path: "/Pagination" }
+        { title: "Paginate", content: "Page Navigation Component", path: "/Pagination" },
+        { title: "Voting poll", content: "Voting Poll page", path: "/poll" }
 
     ]
 

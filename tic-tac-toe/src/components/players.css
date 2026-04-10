@@ -1,9 +1,11 @@
-.fl-class {
+/* Flex container for centering elements */
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Styling for normal text with animation */
 .normal {
     font-size: 14px;
     font-weight: bold;
@@ -12,6 +14,7 @@
     animation: growFont 3s forwards;
 }
 
+/* Keyframe animation for font growth */
 @keyframes growFont {
     from {
         font-size: 14px;
