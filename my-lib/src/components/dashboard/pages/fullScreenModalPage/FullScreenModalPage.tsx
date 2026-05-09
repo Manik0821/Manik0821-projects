@@ -28,6 +28,7 @@ export const FullScreenModalPage = () => {
                         <a className='nav-item' href="/" onClick={closeMenu}>Home</a>
                         <a className='nav-item' href="#about" onClick={closeMenu}>About</a>
                         <a className='nav-item' href="#contact" onClick={closeMenu}>Contact</a>
+                        <a className='nav-item' href="/poll" onClick={closeMenu}>Contact</a>
                     </nav>
                 </div>
             </FullScreenModal>
